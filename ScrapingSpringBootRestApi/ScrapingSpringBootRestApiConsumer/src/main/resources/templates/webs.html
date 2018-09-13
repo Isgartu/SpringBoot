@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8" />
+<title>Products</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
+</head>
+<body>
+	<div class="container">
+		<div th:if="${not #lists.isEmpty(webs)}">
+			<h3 style="text-align: center">Web List</h3>
+			<hr></hr>
+			
+			<a href="home.html" th:href="@{/}">Volver a Inicio</a>
+
+			<p th:each="web: ${webs}">
+				<br></br>
+				<span th:text="${web.date}"></span>
+				<h5 th:text="${web.title}"></h5>
+				<p th:text="${web.description}"></p>
+				<a href="@{${web.link}}" th:href="@{${web.link}}"><p th:text="${web.link}"></p></a>
+				<br></br>
+				<hr></hr>
+			</p>
+			
+			<a href="home.html" style="text-align: center; display:block" th:href="@{/}">Volver a Inicio</a>
+
+
+				<!-- <table class="highlight">
+				<thead>
+					<tr>
+						<th>title</th>
+						<th>Description</th>
+						<th>Link</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="web: ${webs}">
+						<td th:text="${web.title}"></td>
+						<td th:text="${web.description}"></td>
+						<td th:text="${web.link}"></td>
+					</tr>
+				</tbody>
+			</table> -->
+			
+			
+		</div>
+	</div>
+</body>
+</html>

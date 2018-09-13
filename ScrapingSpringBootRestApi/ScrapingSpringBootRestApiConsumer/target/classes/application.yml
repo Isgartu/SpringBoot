@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  error:
+    whitelabel:
+      enabled: false
+spring.thymeleaf.cache: false
+spring.thymeleaf.enabled: true
+spring.thymeleaf.prefix: classpath:/templates/
+spring.thymeleaf.suffix: .html
+
+resources:
+  url:
+    programacion: 'http://localhost:8080/SpringBootRestApi/api/scraping/?url=https://www.softzone.es/category/programacion/'
+    seguridad: 'http://localhost:8080/SpringBootRestApi/api/scraping/?url=https://www.softzone.es/category/seguridad/'
+

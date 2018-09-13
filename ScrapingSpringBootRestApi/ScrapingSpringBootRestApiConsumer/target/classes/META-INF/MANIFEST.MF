@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: ScrapingSpringBootRestApiConsumer
+Implementation-Version: 1.0.0
+Built-By: israel.garzon
+Implementation-Vendor-Id: com.isgartu.springboot
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/ScrapingSpri
+ ngBootRestApi/ScrapingSpringBootRestApiConsumer/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
